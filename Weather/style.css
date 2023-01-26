@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
+
+:root {
+    color: black;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*::selection {
+    background-color: rgb(70, 70, 70);
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Unbounded', cursive, Arial, Helvetica, sans-serif;
+}
+
+.alignment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.container {
+    background-color: lavender;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.bg-night {
+    background-image: url(/images/pexels-aviv-perets-3274903.jpg) !important;
+}
+
+.bg-morning {
+    background-image: url(/images/pexels-bella-white-635279.jpg) !important;
+}
+
+.bg-sunset {
+    background-image: url(/images/pexels-abdullah-ghatasheh-1631677.jpg) !important;
+}
+
+.SearchCity {
+    height: 20%;
+    width: 100%;
+    position: relative;
+}
+
+div form {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#txtCity {
+    padding: 0.5rem;
+    width: 25%;
+    border: none;
+    font-size: 1.6rem;
+    color: #222222;
+    text-transform: uppercase;
+    border-top-left-radius: 1.4rem;
+    border-bottom-left-radius: 1.4rem;
+}
+
+.currentİnfo {
+    width: 100%;
+    height: 15%;
+    padding: 2rem;
+}
+
+.cityDate {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cityName {
+    font-size: 3rem;
+    color: var(--color);
+    font-weight: bold;
+}
+
+.date {
+    font-size: 2.5rem;
+    color: var(--color);
+    font-weight: bold;
+}
+
+.situation {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    gap: 5rem;
+    padding-bottom: 2rem;
+}
+
+.commonSit {
+    width: 35%;
+    height: 100%;
+    color: var(--color);
+}
+
+.averageinfo {
+    width: 50%;
+    height: 100%;
+    opacity: 0.6;
+    background-color: black;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.cloud {
+    font-size: 13rem;
+    justify-content: flex-end !important;
+    padding-right: 1.5rem;
+}
+
+.numeric {
+    font-size: 8rem;
+    justify-content: flex-start !important;
+    padding-left: 1.5rem;
+}
+
+.rowTop {
+    width: 100%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.rowBottom {
+    width: 100%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.rowTop div,
+.rowBottom div {
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.alignment div {
+    padding: 0.4rem;
+}
+
+.rowBottom div:first-child,
+.rowTop div:first-child {
+    font-size: 2.6rem;
+}
+
+.footer {
+    width: 100%;
+    height: 40%;
+    padding-top: 2rem;
+}
+
+.cards {
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    gap: 2rem;
+}
+
+.card {
+    width: 10%;
+    height: 90%;
+    opacity: 0.6;
+    background-color: black;
+    border-radius: 1rem;
+    gap: 1rem;
+}
+
+.card span {
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.card span:nth-child(3) i {
+    font-size: 4rem !important;
+}
+
+.card span:nth-child(4) {
+    font-size: 2rem;
+}
+
+.btn {
+    position: absolute;
+    display: inline-block;
+    padding: 0.5rem;
+    border: none;
+    background-color: #222;
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: lighter;
+    text-transform: uppercase;
+    right: 33%;
+    border-top-right-radius: 1.4rem;
+    border-bottom-right-radius: 1.4rem;
+}
